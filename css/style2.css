@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Asap", sans-serif;
     scroll-behavior: smooth;
+    background-color: #c1adb8;
 }
 
 a {
