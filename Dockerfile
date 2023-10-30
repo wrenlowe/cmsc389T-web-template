@@ -1,7 +1,7 @@
 #Use the node:10-alpine image as a base to
 FROM node:10-alpine
 #create a directory for the app and its node_modules with node as its owner
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
