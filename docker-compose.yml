@@ -6,8 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: //docker image name
-    container_name: //name whatever
+    image: node-web-app
+    container_name: wren_lowe_website
     restart: unless-stopped
     networks:
       - app-network
