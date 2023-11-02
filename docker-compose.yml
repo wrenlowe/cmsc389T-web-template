@@ -28,7 +28,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: ~/CMSC389T/git-java-setup/project3/cmsc389T-web-template
+      device: /Users/wrenlowe/CMSC389T/git-java-setup/project3/cmsc389T-web-template
       o: bind
 
 networks:
