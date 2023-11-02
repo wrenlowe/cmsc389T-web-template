@@ -1,14 +1,14 @@
 name: deployment workflow
 on:
   push:
-  branches: [main]
+    branches: [main]
 jobs:
   job_one:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: testing
-        uses: wrenlowe/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -16,4 +16,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script:
             cd TestRepo
-              git pull
+            git pull
