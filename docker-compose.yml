@@ -3,6 +3,12 @@ version: '3'
 services:
   nodejs:
     #fill out the configuration here
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: //docker image name
+    container_name: //name whatever
+    restart: unless-stopped
     networks:
       - app-network
   
