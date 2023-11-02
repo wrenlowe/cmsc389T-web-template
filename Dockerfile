@@ -2,12 +2,12 @@
 FROM node:10-alpine
 #create a directory for the app and its node_modules with node as its owner
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
-
+USER node
 WORKDIR /home/node/app
 
 #install all packages in package.json
 COPY package*.json ./
-USER node
+
 RUN npm install
 COPY --chown=node:node . .
 #expose port 8080 and run the app
