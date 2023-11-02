@@ -4,7 +4,6 @@ FROM node:10-alpine
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 USER node
 WORKDIR /home/node/app
-
 #install all packages in package.json
 COPY package*.json ./
 
