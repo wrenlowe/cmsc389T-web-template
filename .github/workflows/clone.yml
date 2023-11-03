@@ -15,4 +15,6 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PRIVATE_KEY }}
           script: |
-            cd ../pub && git clone https://github.com/wrenlowe/cmsc389T-web-template.git
+            cd ../pub /*&& git clone https://github.com/wrenlowe/cmsc389T-web-template.git */
+            mkdir TestRepo
+            vim text.txt
