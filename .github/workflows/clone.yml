@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PRIVATE_KEY }}
           script: |
-            git clone git@github.com:wrenlowe/cmsc389T-web-template.git
+            cd ../pub && git clone git@github.com:wrenlowe/cmsc389T-web-template.git
